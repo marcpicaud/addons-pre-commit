@@ -12,3 +12,10 @@
   entry: php -l
   language: system
   files: \.php$
+
+- id: php-cs
+  name: PHP Code sniffer
+  description: Run PHP code sniffer against all staged files
+  entry: pre_commit_hooks/php-cs.sh
+  language: script
+  files: \.php$

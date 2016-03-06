@@ -1,0 +1,14 @@
+- id: php-lint-all
+  name: PHP Syntax Check (Comprehensive)
+  description: Check PHP Syntax on all PHP staged files
+  entry: pre_commit_hooks/php-lint.sh
+  language: script
+  files: \.php$
+  args: [-s all]
+
+- id: php-lint
+  name: PHP Syntax Check (Quick)
+  description: Runs php -l on all staged files. Exits when it hits the first errored file
+  entry: php -l
+  language: system
+  files: \.php$

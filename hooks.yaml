@@ -22,7 +22,7 @@
 
 - id: php-cbf
   name: PHP Code Beautifier
-  description: Run PHP Code Beautifier agains all staged files
+  description: Run PHP Code Beautifier against all staged files
   entry: pre_commit_hooks/php-cbf.sh
   language: script
   files: \.php$
